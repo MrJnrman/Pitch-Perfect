@@ -29,33 +29,28 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DFO-Dn-YBD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bX-zH-CYd">
-                                <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxn-gy-YXO">
+                                <rect key="frame" x="133.5" y="356" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho8-Kx-lrQ">
-                                <rect key="frame" x="130" y="385" width="116" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho8-Kx-lrQ">
+                                <rect key="frame" x="134" y="385" width="106" height="30"/>
                                 <state key="normal" title="Stop Recording"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6O-cm-BdX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxn-gy-YXO">
-                                <rect key="frame" x="132" y="356" width="114" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ya2-TX-YMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yE-QV-0IG"/>
                             <constraint firstItem="Ya2-TX-YMq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hbw-aK-mLi"/>
+                            <constraint firstItem="zxn-gy-YXO" firstAttribute="centerX" secondItem="Ya2-TX-YMq" secondAttribute="centerX" id="Ly5-ri-WUu"/>
+                            <constraint firstItem="zxn-gy-YXO" firstAttribute="top" secondItem="Ya2-TX-YMq" secondAttribute="bottom" constant="8" id="T7j-QL-9Ek"/>
+                            <constraint firstItem="ho8-Kx-lrQ" firstAttribute="centerX" secondItem="zxn-gy-YXO" secondAttribute="centerX" id="aM5-DO-Ls4"/>
+                            <constraint firstItem="ho8-Kx-lrQ" firstAttribute="top" secondItem="zxn-gy-YXO" secondAttribute="bottom" constant="8" id="bOq-yV-3uT"/>
                         </constraints>
                     </view>
                     <connections>
