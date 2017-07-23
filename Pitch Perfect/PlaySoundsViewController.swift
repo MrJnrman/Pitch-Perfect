@@ -37,8 +37,17 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        setButtonScale()
         configureUI(.notPlaying)
+    }
+    
+    func setButtonScale() {
+        self.snailButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        self.chipmunkButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        self.rabbitButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        self.vaderButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        self.echoButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        self.reverbButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
     }
 
     @IBAction func playSoundForButton(_ sender: UIButton) {
