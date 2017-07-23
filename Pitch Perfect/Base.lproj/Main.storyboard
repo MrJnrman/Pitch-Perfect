@@ -34,9 +34,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho8-Kx-lrQ">
-                                <rect key="frame" x="134" y="448" width="106" height="30"/>
-                                <state key="normal" title="Stop Recording"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho8-Kx-lrQ">
+                                <rect key="frame" x="160" y="448" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="dzW-7Q-Uev"/>
+                                    <constraint firstAttribute="height" constant="55" id="oqK-Go-2Ld"/>
+                                </constraints>
+                                <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6O-cm-BdX"/>
                                 </connections>
@@ -44,12 +48,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ya2-TX-YMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yE-QV-0IG"/>
-                            <constraint firstItem="Ya2-TX-YMq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hbw-aK-mLi"/>
-                            <constraint firstItem="zxn-gy-YXO" firstAttribute="centerX" secondItem="Ya2-TX-YMq" secondAttribute="centerX" id="Ly5-ri-WUu"/>
-                            <constraint firstItem="zxn-gy-YXO" firstAttribute="top" secondItem="Ya2-TX-YMq" secondAttribute="bottom" constant="8" id="T7j-QL-9Ek"/>
-                            <constraint firstItem="ho8-Kx-lrQ" firstAttribute="centerX" secondItem="zxn-gy-YXO" secondAttribute="centerX" id="aM5-DO-Ls4"/>
-                            <constraint firstItem="ho8-Kx-lrQ" firstAttribute="top" secondItem="zxn-gy-YXO" secondAttribute="bottom" constant="8" id="bOq-yV-3uT"/>
+                            <constraint firstItem="Ya2-TX-YMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1tW-a3-SQM"/>
+                            <constraint firstItem="ho8-Kx-lrQ" firstAttribute="top" secondItem="zxn-gy-YXO" secondAttribute="bottom" constant="8" id="Nzb-ah-VD5"/>
+                            <constraint firstItem="ho8-Kx-lrQ" firstAttribute="centerX" secondItem="zxn-gy-YXO" secondAttribute="centerX" id="P3g-Kq-xTZ"/>
+                            <constraint firstItem="zxn-gy-YXO" firstAttribute="top" secondItem="Ya2-TX-YMq" secondAttribute="bottom" constant="8" id="Sfk-4y-ajn"/>
+                            <constraint firstItem="zxn-gy-YXO" firstAttribute="centerX" secondItem="Ya2-TX-YMq" secondAttribute="centerX" id="XRh-rv-Fwk"/>
+                            <constraint firstItem="Ya2-TX-YMq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nPa-2w-YkI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -60,10 +64,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="136.5" y="138.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="RecordButton" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
     </resources>
 </document>
